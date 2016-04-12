@@ -1,7 +1,7 @@
 .top-header img {
 	float: left;
 	width: 100px;
-	margin-right: 5px;
-	border: 1px solid #999;
-
+	margin-right: 10px;
+	border: 1px solid #666;
+	box-shadow: 2px 2px 5px #888888;
 }
