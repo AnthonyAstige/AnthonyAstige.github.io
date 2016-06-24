@@ -3,5 +3,10 @@
 	width: 100px;
 	margin-right: 10px;
 	border: 1px solid #666;
-	box-shadow: 2px 2px 5px #888888;
+	box-shadow: 2px 2px 5px #888;
+}
+
+.top-header p {
+	/* http://stackoverflow.com/a/15421257/4747661 */
+	overflow: hidden;
 }
