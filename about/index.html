@@ -28,6 +28,14 @@
 				/* A little extra spacing between words */
 				line-height: 1.65;
 			}
+			/* Clear top header's paragraph on xs devices so text is below picture */
+			/* When it's to right side weird wrapping */
+			@media (max-width: 768px) {
+				.top-header p {
+					clear: both;
+					padding-top: 9px;
+				}
+			}
 		</style>
 	</head>
 
@@ -51,7 +59,7 @@
 
 			<!-- Examples of Work -->
 			<h2>Examples</h2>
-				<h4>Present (As a sole developer 2015-present)</h4>
+				<h4>Present (Sole dev 2015-present)</h4>
 				<ul>
 					<li>
 						<a target="_blank" href="http://www.trackmyfoods.com/">www.trackmyfoods.com</a>
@@ -67,7 +75,7 @@
 					</li>
 				</ul>
 
-				<h4>Past (As a team leader)</h4>
+				<h4>Past (Team leader)</h4>
 				<ul>
 					<li>
 						<a target="_blank" href="http://www.thesfmarathon.com">www.thesfmarathon.com</a> (2011-2013, prior website support)
