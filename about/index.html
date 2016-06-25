@@ -21,20 +21,21 @@
 				box-shadow: 2px 2px 5px #888;
 			}
 
+			/* Couldn't toggle bullets/non-bullets with @media for pdf printer so kept simple */
 			.top-header p {
-				/* http://stackoverflow.com/a/15421257/4747661 */
-				overflow: hidden;
-
-				/* A little extra spacing between words */
+				/* A little extra vertical spacing */
 				line-height: 1.65;
+
+				/* Force to not text wrap image and treat as one block */
+				/* No longer needed http://stackoverflow.com/a/15421257/4747661 for wrapping */
+				float: left;
+
+				list-style-type: none;
+				padding: 0;
 			}
-			/* Clear top header's paragraph on xs devices so text is below picture */
-			/* When it's to right side weird wrapping */
-			@media (max-width: 768px) {
-				.top-header p {
-					clear: both;
-					padding-top: 9px;
-				}
+
+			.clear {
+				clear: both;
 			}
 		</style>
 	</head>
@@ -58,7 +59,7 @@
 			</div>
 
 			<!-- Examples of Work -->
-			<h2>Examples</h2>
+			<h2 class="clear">Examples</h2>
 				<h4>Present (Sole dev 2015-present)</h4>
 				<ul>
 					<li>
