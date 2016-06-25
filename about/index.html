@@ -10,7 +10,25 @@
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/custom.css" rel="stylesheet">
+
+		<!-- Yeah yeah, put my css in another file. This loads faster and is arguably more maintainable with such minor custom styles -->
+		<style>
+			.top-header img {
+				float: left;
+				width: 125px;
+				margin-right: 10px;
+				border: 1px solid #666;
+				box-shadow: 2px 2px 5px #888;
+			}
+
+			.top-header p {
+				/* http://stackoverflow.com/a/15421257/4747661 */
+				overflow: hidden;
+
+				/* A little extra spacing between words */
+				line-height: 1.65;
+			}
+		</style>
 	</head>
 
 	<body>
