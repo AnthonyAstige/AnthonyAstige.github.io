@@ -1,6 +1,6 @@
 .top-header img {
 	float: left;
-	width: 120px;
+	width: 125px;
 	margin-right: 10px;
 	border: 1px solid #666;
 	box-shadow: 2px 2px 5px #888;
@@ -9,4 +9,7 @@
 .top-header p {
 	/* http://stackoverflow.com/a/15421257/4747661 */
 	overflow: hidden;
+
+	/* A little extra spacing between words */
+	line-height: 1.65;
 }
